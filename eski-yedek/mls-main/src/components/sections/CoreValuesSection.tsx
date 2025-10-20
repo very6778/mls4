@@ -99,7 +99,7 @@ export const CoreValuesSection = (): JSX.Element => {
         gsap.set(lineSegments[index], { background: 'rgba(201, 162, 75, 0.08)' });
       });
 
-      // Step 1: Activate first section (Şeffaf işbirliği)
+      // Step 1: Activate first section (Mühendislik Yetkinliği)
       if (sections[0] && lineSegments[0]) {
         tl.to(lineSegments[0], {
           background: 'linear-gradient(119deg, rgba(201, 162, 75, 1) 0%, rgba(161, 86, 0, 1) 100%)',
@@ -113,7 +113,7 @@ export const CoreValuesSection = (): JSX.Element => {
         }, "-=0.5");
       }
 
-      // Step 2: Move to second section (Hızlı tedarik)
+      // Step 2: Move to second section (Üretim Kalitesi)
       if (sections[1]) {
         tl.to(lineSegments[0], {
           background: 'rgba(201, 162, 75, 0.08)',
@@ -137,7 +137,7 @@ export const CoreValuesSection = (): JSX.Element => {
         }, "-=0.5");
       }
 
-      // Step 3: Third section (En uygun fiyat)
+      // Step 3: Third section (Sürekli İyileştirme)
       if (sections[2]) {
         tl.to(lineSegments[1], {
           background: 'rgba(201, 162, 75, 0.08)',
@@ -161,7 +161,7 @@ export const CoreValuesSection = (): JSX.Element => {
         }, "-=0.5");
       }
 
-      // Step 4: Fourth section (Garantili hizmet)
+      // Step 4: Fourth section (Güvenilir İşbirliği)
       if (sections[3]) {
         tl.to(lineSegments[2], {
           background: 'rgba(201, 162, 75, 0.08)',
@@ -377,43 +377,43 @@ export const CoreValuesSection = (): JSX.Element => {
             
             {/* Content - Responsive Layout */}
             <div ref={valueSectionsRef} className="lg:absolute lg:top-[19px] lg:left-[38px] w-full lg:w-[520px] h-auto lg:h-[550px] px-4 lg:px-0 space-y-8 lg:space-y-0 core-values-content">
-              {/* Şeffaf işbirliği */}
+              {/* Mühendislik Yetkinliği */}
               <div className="value-section lg:absolute lg:top-0 lg:left-0 w-full lg:w-[520px] h-auto lg:h-[110px] mb-6 lg:mb-0 transition-all duration-300 ease-out core-values-item">
                 <h3 className="value-title font-bold leading-tight lg:leading-[40px] tracking-0 text-[#2B2B2B] mb-1 transition-all duration-300 ease-out text-[20px] sm:text-[24px] lg:text-[32px] opacity-100" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  Şeffaf işbirliği
+                  Mühendislik Yetkinliği
                 </h3>
                 <p className="value-description text-[14px] lg:text-[16px] text-[#4F4F4F] leading-relaxed max-w-[520px] transition-all duration-300 ease-out opacity-100 mb-6" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  Tüm süreçlerimizi açık ve izlenebilir yönetir, projelerinizde net raporlama ve güvene dayalı iş akışları sunarız.
+                  Yüksek mühendislik bilgimizle, ihtiyaçlarınıza özel çözümler geliştiriyoruz. Her parçanın arkasında teknik uzmanlık ve titizlikle yapılan analizler var.
                 </p>
               </div>
               
-              {/* Hızlı tedarik */}
+              {/* Üretim Kalitesi */}
               <div className="value-section lg:absolute lg:top-[130px] lg:left-0 w-full lg:w-[520px] h-auto lg:h-[110px] mb-6 lg:mb-0 transition-all duration-300 ease-out core-values-item">
                 <h2 className="value-title font-bold leading-tight lg:leading-[50px] tracking-0 text-[#2B2B2B] mb-1 transition-all duration-300 ease-out text-[28px] sm:text-[32px] lg:text-[40px] opacity-100" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  Hızlı tedarik
+                  Üretim Kalitesi
                 </h2>
                 <p className="value-description text-[14px] lg:text-[16px] text-[#4F4F4F] leading-relaxed max-w-[520px] transition-all duration-300 ease-out opacity-100 mb-6" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  Geniş stok ağımız ve optimize lojistik operasyonlarımız sayesinde kritik parçaları en kısa sürede sahaya ulaştırırız.
+                  Modern üretim hatlarımız ve kalite kontrol süreçlerimizle, her seferinde tutarlı ve üstün ürünler sunarız.
                 </p>
               </div>
               
-              {/* En uygun fiyat */}
+              {/* Sürekli İyileştirme */}
               <div className="value-section lg:absolute lg:top-[260px] lg:left-0 w-full lg:w-[520px] h-auto lg:h-[110px] mb-6 lg:mb-0 transition-all duration-300 ease-out core-values-item">
                 <h3 className="value-title font-bold leading-tight lg:leading-[40px] tracking-0 text-[#2B2B2B] mb-1 transition-all duration-300 ease-out text-[20px] sm:text-[24px] lg:text-[32px] opacity-100" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  En uygun fiyat
+                  Sürekli İyileştirme
                 </h3>
                 <p className="value-description text-[14px] lg:text-[16px] text-[#4F4F4F] leading-relaxed max-w-[520px] transition-all duration-300 ease-out opacity-100 mb-6" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  Verimli üretim altyapımız ve uzun vadeli tedarik anlaşmalarımızla maliyetleri düşürür, rekabetçi fiyatlarla değer yaratırız.
+                  Gelişime daima açığız. Süreçlerimizi ve ürünlerimizi, geri bildirimler ve yeniliklerle sürekli ileriye taşıyoruz.
                 </p>
               </div>
               
-              {/* Garantili hizmet */}
+              {/* Güvenilir İşbirliği */}
               <div className="value-section lg:absolute lg:top-[390px] lg:left-0 w-full lg:w-[520px] h-auto lg:h-[110px] mb-6 lg:mb-0 transition-all duration-300 ease-out core-values-item">
                 <h3 className="value-title font-bold leading-tight lg:leading-[40px] tracking-0 text-[#2B2B2B] mb-1 transition-all duration-300 ease-out text-[20px] sm:text-[24px] lg:text-[32px] opacity-100" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  Garantili hizmet
+                  Güvenilir İşbirliği
                 </h3>
                 <p className="value-description text-[14px] lg:text-[16px] text-[#4F4F4F] leading-relaxed max-w-[520px] transition-all duration-300 ease-out opacity-100 mb-6" style={{fontFamily: 'Manrope, Helvetica'}}>
-                  Kurulumdan devreye almaya kadar teknik ekibimizle yanınızda olur, kapsamlı garanti ve hızlı servis desteğiyle sürdürülebilirlik sağlarız.
+                  Şeffaf, sürdürülebilir ve uzun vadeli ilişkiler kurarız. İş ortaklarımıza her zaman sözümüzü tutarız.
                 </p>
               </div>
             </div>

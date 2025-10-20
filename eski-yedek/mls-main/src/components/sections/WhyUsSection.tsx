@@ -19,29 +19,29 @@ export const WhyUsSection = (): JSX.Element => {
 
   const whyUsCards = [
     {
-      title: "Şeffaf işbirliği",
-      description: "Tüm süreçlerimizi açık ve izlenebilir yönetir, projelerinizde net raporlama ve güvene dayalı iş akışları sunarız.",
+      title: "Mühendislik Yetkinliği",
+      description: "Uzman mühendis ekibimiz, ileri teknoloji üretim altyapımızla her projede özel ve hassas çözümler sunar.",
       image: "/images/new-images/silo.jpg",
       width: 800,
       height: 400,
     },
     {
-      title: "Hızlı tedarik",
-      description: "Geniş stok ağımız ve optimize lojistik operasyonlarımız sayesinde kritik parçaları en kısa sürede sahaya ulaştırırız.",
+      title: "Üstün Üretim Kalitesi",
+      description: "Ürünlerimiz titizlikle üretilir ve global kalite standartlarına uygundur.",
       image: "/images/new-images/otomasyon.jpg",
       width: 484,
       height: 400,
     },
     {
-      title: "En uygun fiyat",
-      description: "Verimli üretim altyapımız ve uzun vadeli tedarik anlaşmalarımızla maliyetleri düşürür, rekabetçi fiyatlarla değer yaratırız.",
+      title: "Güvenli ve Şeffaf Ortaklık",
+      description: "Her adımda şeffaf iletişimle güvene dayalı iş birlikleri kurarız.",
       image: "/images/new-images/image3.jpg",
       width: 484,
       height: 400,
     },
     {
-      title: "Garantili hizmet",
-      description: "Kurulumdan devreye almaya kadar teknik ekibimizle yanınızda olur, kapsamlı garanti ve hızlı servis desteğiyle sürdürülebilirlik sağlarız.",
+      title: "Sürekli Gelişim ve Uyum Yeteneği",
+      description: "Endüstrideki yeniliklere hızla uyum sağlarız. Ar-Ge yatırımlarımızla ürün yelpazemizi ve üretim süreçlerimizi geliştirerek sektördeki liderliğimizi sürdürürüz.",
       image: "/images/new-images/3afa3910-6a3a-447f-8682-2348ce147cb1.jpg",
       width: 800,
       height: 400,
@@ -49,7 +49,6 @@ export const WhyUsSection = (): JSX.Element => {
   ];
 
   useEffect(() => {
-    let titleHidden = false;
     if (typeof window === "undefined") return;
     
     const ctx = gsap.context(() => {
@@ -100,8 +99,7 @@ export const WhyUsSection = (): JSX.Element => {
               fastScrollEnd: false,
               onUpdate: (self) => {
                 // Hide title only after the exit animation is completely finished
-                if (self.progress > 0.65 && !titleHidden) {
-                  titleHidden = true;
+                if (self.progress > 0.65 && !isTitleHidden) {
                   setIsTitleHidden(true);
                 }
               }
@@ -170,7 +168,7 @@ export const WhyUsSection = (): JSX.Element => {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, []); // Remove isAnimationDone dependency
 
   return (
     <section ref={sectionRef} className="w-full min-h-screen relative overflow-hidden">
