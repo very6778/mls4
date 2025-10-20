@@ -1,0 +1,136 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Anasayfa",
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "blog": "Blog"
+    },
+    "cta": "Teklif Al"
+  },
+  "Introduction": {
+    "headline": {
+      "accent": "Endüstriyel",
+      "main": "Gücün Yeni Adı"
+    },
+    "description": "Kaliteli ürün gamı, sektörel deneyim ve güvenilir hizmetle Millersan; kayış, kaplin ve endüstriyel yedek parçada çözüm ortağınız.",
+    "heroImages": {
+      "vals": "Vals",
+      "belt": "Kayış",
+      "assembly": "Endüstriyel komponent",
+      "mica": "Mika cam",
+      "bearing": "Rulman"
+    },
+    "mobileBearingAlt": "Rulman"
+  },
+  "Solutions": {
+    "title": "Endüstriyel Çözümlerle Geleceği İnşa Ediyoruz"
+  },
+  "BackToTop": {
+    "ariaLabel": "Yukarı dön"
+  },
+  "ProductShowcase": {
+    "title": "Geniş ve Güvenilir Ürün Yelpazesi",
+    "cta": "Kataloğu İncele",
+    "cards": {
+      "silos": {
+        "title": "Modern depolama çözümleri ve silo ekipmanları.",
+        "subtitle": "SİLO\nSİSTEMLERİ",
+        "alt": "Silo sistemleri ürün görseli"
+      },
+      "mills": {
+        "title": "Yüksek kapasiteli öğütme ve işleme makineleri.",
+        "subtitle": "DEĞİRMEN\nMAKİNELERİ",
+        "alt": "Değirmen makineleri ürün görseli"
+      },
+      "spares": {
+        "title": "Orijinal ve uzun ömürlü yedek parça çözümleri.",
+        "subtitle": "DEĞİRMEN MAKİNELERİ\nYEDEK PARÇALARI",
+        "alt": "Değirmen makineleri yedek parça görselleri",
+        "images": {
+          "left": "Değirmen yedek parça seti - sol",
+          "center": "Değirmen yedek parça seti - merkez",
+          "right": "Değirmen yedek parça seti - sağ"
+        }
+      },
+      "additives": {
+        "title": "Kalite artırıcı un katkı ve iyileştirici ürünler.",
+        "subtitle": "UN KATKI\nMADDELERİ",
+        "alt": "Un katkı maddeleri ürün görseli"
+      }
+    }
+  },
+  "AboutUs": {
+    "title": "Hedeflerimiz",
+    "productDescription": "5 yıl içinde endüstriyel ürün sayısı.",
+    "narrative": "MillerSan olarak, yüksek üretim kapasitemiz, global iş birliklerimiz ve sektördeki köklü tecrübemizle büyümeye devam ediyoruz. Güven veren rakamlarımız, her geçen gün artan müşteri memnuniyetimizin ve kaliteli hizmet anlayışımızın en somut göstergesidir.",
+    "stats": {
+      "deliveries": {
+        "label": "1,200 Teslim Edilecek Ürün",
+        "denominator": "TESLİMAT",
+        "value": 1200
+      },
+      "exports": {
+        "label": "30 Ülke ve Bölgeye İhracat",
+        "denominator": "İHRACAT",
+        "value": 30
+      },
+      "customers": {
+        "label": "1,000 Memnun Müşteri",
+        "denominator": "MÜŞTERİ",
+        "value": 1000
+      }
+    }
+  },
+  "Contact": {
+    "title": "Size Yardımcı Olmamızı İster misiniz?",
+    "subtitle": "<highlight>Endüstriyel</highlight> Çözüm İhtiyacınız için Bizimle İletişime Geçin",
+    "description": "Yüksek kaliteli ürün ve sistem çözümlerimiz hakkında detaylı bilgi almak ister misiniz? Formu doldurun, size ulaşalım.",
+    "contact": {
+      "emailLabel": "E-posta",
+      "phoneLabel": "Telefon"
+    },
+    "fields": {
+      "name": {
+        "label": "Ad Soyad",
+        "placeholder": "Ahmet Şanlı"
+      },
+      "email": {
+        "label": "E-posta",
+        "placeholder": "ahmet@gmail.com"
+      },
+      "industry": {
+        "label": "Endüstri",
+        "placeholder": "Çalıştığınız sektör"
+      },
+      "message": {
+        "label": "Mesajınız",
+        "placeholder": "İletinizi yazabilirsiniz"
+      }
+    },
+    "button": {
+      "default": "Teklif Al",
+      "success": "Talebiniz Alındı"
+    }
+  },
+  "Offices": {
+    "detailLabel": "Detayları gör",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta",
+    "close": "Kapat",
+    "items": {
+      "konya": {
+        "name": "Konya Ofis",
+        "description": "Konya ofisimiz, Anadolu'nun kalbi konumundaki şehirde yerel müşterilerimize hızlı ve etkin hizmet sunmak için kurulmuştur."
+      },
+      "erbil": {
+        "name": "Erbil Ofis",
+        "description": "Kuzey Irak'ın ticaret merkezi Erbil'deki ofisimiz, bölgedeki un fabrikaları ve endüstriyel tesislere kesintisiz hizmet sağlamaktadır."
+      },
+      "baghdad": {
+        "name": "Bağdat Ofis",
+        "description": "Irak'ın başkenti Bağdat'taki ofisimiz, geniş ürün ağımız ve tecrübeli ekibimizle un endüstrisine kapsamlı çözümler sunmaktadır."
+      }
+    }
+  }
+}

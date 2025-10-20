@@ -1,0 +1,136 @@
+{
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "contact": "Contact",
+      "blog": "Blog"
+    },
+    "cta": "Request Quote"
+  },
+  "Introduction": {
+    "headline": {
+      "accent": "Industrial",
+      "main": "Power Redefined"
+    },
+    "description": "With a quality product range, sector experience and trusted service, Millersan is your solution partner for belts, couplings and industrial spare parts.",
+    "heroImages": {
+      "vals": "Roller mill component",
+      "belt": "Industrial belt",
+      "assembly": "Mechanical assembly",
+      "mica": "Mica glass component",
+      "bearing": "Bearing"
+    },
+    "mobileBearingAlt": "Bearing"
+  },
+  "Solutions": {
+    "title": "Building the Future with Industrial Solutions"
+  },
+  "BackToTop": {
+    "ariaLabel": "Back to top"
+  },
+  "ProductShowcase": {
+    "title": "Extensive and Reliable Product Portfolio",
+    "cta": "Browse Catalogue",
+    "cards": {
+      "silos": {
+        "title": "Modern storage solutions and silo equipment.",
+        "subtitle": "SILO\nSYSTEMS",
+        "alt": "Silo systems product visual"
+      },
+      "mills": {
+        "title": "High-capacity milling and processing machines.",
+        "subtitle": "MILLING\nMACHINES",
+        "alt": "Milling machines product visual"
+      },
+      "spares": {
+        "title": "Original and long-life spare part solutions.",
+        "subtitle": "MILLING MACHINES\nSPARE PARTS",
+        "alt": "Milling machine spare part visuals",
+        "images": {
+          "left": "Milling spare parts set - left",
+          "center": "Milling spare parts set - center",
+          "right": "Milling spare parts set - right"
+        }
+      },
+      "additives": {
+        "title": "Quality-enhancing flour additives and improvers.",
+        "subtitle": "FLOUR ADDITIVE\nPRODUCTS",
+        "alt": "Flour additive products visual"
+      }
+    }
+  },
+  "AboutUs": {
+    "title": "Our Goals",
+    "productDescription": "Industrial product count over the next 5 years.",
+    "narrative": "At MillerSan, we continue to grow with high production capacity, global partnerships and deep-rooted industry experience. Our rock-solid figures are the clearest proof of rising customer satisfaction and our commitment to quality service.",
+    "stats": {
+      "deliveries": {
+        "label": "1,200 Products to be Delivered",
+        "denominator": "DELIVERIES",
+        "value": 1200
+      },
+      "exports": {
+        "label": "Exports to 30 Countries and Regions",
+        "denominator": "EXPORTS",
+        "value": 30
+      },
+      "customers": {
+        "label": "1,000 Satisfied Customers",
+        "denominator": "CUSTOMERS",
+        "value": 1000
+      }
+    }
+  },
+  "Contact": {
+    "title": "Would you like us to help you?",
+    "subtitle": "Get in touch with us for your <highlight>Industrial</highlight> solution needs",
+    "description": "Would you like to learn more about our high-quality products and system solutions? Fill out the form and we will contact you.",
+    "contact": {
+      "emailLabel": "Email",
+      "phoneLabel": "Phone"
+    },
+    "fields": {
+      "name": {
+        "label": "Full name",
+        "placeholder": "John Miller"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "john@example.com"
+      },
+      "industry": {
+        "label": "Industry",
+        "placeholder": "Your field of work"
+      },
+      "message": {
+        "label": "Your message",
+        "placeholder": "You can leave your message here"
+      }
+    },
+    "button": {
+      "default": "Request Quote",
+      "success": "Request received"
+    }
+  },
+  "Offices": {
+    "detailLabel": "View details",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "close": "Close",
+    "items": {
+      "konya": {
+        "name": "Konya Office",
+        "description": "Our Konya office was established in the heart of Anatolia to deliver fast and effective service to our local customers."
+      },
+      "erbil": {
+        "name": "Erbil Office",
+        "description": "Located in Erbil, the commercial hub of Northern Iraq, this office provides uninterrupted support to regional flour mills and industrial facilities."
+      },
+      "baghdad": {
+        "name": "Baghdad Office",
+        "description": "Based in Iraq's capital, our Baghdad office offers comprehensive solutions to the flour industry with an extensive product range and experienced team."
+      }
+    }
+  }
+}
