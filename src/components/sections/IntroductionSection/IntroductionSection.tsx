@@ -17,6 +17,8 @@ export const IntroductionSection = (): JSX.Element => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const scrollElementRef = useRef<HTMLDivElement>(null);
   const factoryCardRef = useRef<HTMLDivElement>(null);
+  const scrollTriggerRef = useRef<ScrollTrigger | null>(null);
+  const parallaxTimelineRef = useRef<gsap.core.Timeline | null>(null);
   const lenis = useLenis();
   const t = useTranslations("Introduction");
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
@@ -93,6 +95,7 @@ export const IntroductionSection = (): JSX.Element => {
     }
 
     if (window.innerWidth >= 1024) {
+      const parallaxTimeline = gsap.timeline();
       parallaxImagesRef.current.forEach((imageRef, index) => {
         if (imageRef && scrollElementRef.current) {
           const imageData = heroImages[index];
@@ -115,9 +118,8 @@ export const IntroductionSection = (): JSX.Element => {
         }
       });
 
-      let scene1 = gsap.timeline();
-      ScrollTrigger.create({
-        animation: scene1,
+      const trigger = ScrollTrigger.create({
+        animation: parallaxTimeline,
         trigger: scrollElementRef.current,
         start: "top top",
         end: "bottom top",
@@ -134,7 +136,7 @@ export const IntroductionSection = (): JSX.Element => {
           const moveDistance = -300 * speed; // Increased base distance for more dramatic effect
           const rotationAmount = imageData.rotation + (speed * 25); // Increased rotation multiplier
 
-          scene1.to(imageRef, {
+          parallaxTimeline.to(imageRef, {
             y: moveDistance,
             rotation: rotationAmount,
             ease: "none"
@@ -142,18 +144,24 @@ export const IntroductionSection = (): JSX.Element => {
         }
       });
 
-      return () => {
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      };
+      scrollTriggerRef.current = trigger;
+      parallaxTimelineRef.current = parallaxTimeline;
     }
 
     if (lenis) {
       lenis.on('scroll', ScrollTrigger.update);
-
-      return () => {
-        lenis.off('scroll', ScrollTrigger.update);
-      };
     }
+
+    return () => {
+      parallaxTimelineRef.current?.kill();
+      parallaxTimelineRef.current = null;
+      scrollTriggerRef.current?.kill();
+      scrollTriggerRef.current = null;
+
+      if (lenis) {
+        lenis.off('scroll', ScrollTrigger.update);
+      }
+    };
   }, [lenis, heroImages]);
 
   // 3D Tilt effect on mouse move
