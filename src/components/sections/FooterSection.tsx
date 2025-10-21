@@ -22,7 +22,9 @@ export const FooterSection = () => (
       <div className="flex flex-col items-center gap-3">
         <span className="text-base font-bold text-[#2b2b2b]" style={{fontFamily: 'Manrope, sans-serif'}}>İletişim Bilgileri</span>
         <div className="flex flex-col items-center gap-1">
-          <span className="text-[13px] font-medium text-[#555]" style={{fontFamily: 'Manrope, sans-serif'}}>Adres: Organize Sanayi Bölgesi, İstanbul</span>
+          <span className="text-[13px] font-medium text-[#555]" style={{fontFamily: 'Manrope, sans-serif'}}>
+            Adres: Musalla Bağlar Mahallesi, Kule Cd. No:2,<br />42060 Selçuklu / Konya
+          </span>
           <span className="text-[13px] font-medium text-[#555]" style={{fontFamily: 'Manrope, sans-serif'}}>Telefon: +90 541 234 56 78</span>
           <span className="text-[13px] font-medium text-[#555]" style={{fontFamily: 'Manrope, sans-serif'}}>E-posta: info@millersan.com</span>
 
