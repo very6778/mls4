@@ -17,8 +17,6 @@ export const IntroductionSection = (): JSX.Element => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const scrollElementRef = useRef<HTMLDivElement>(null);
   const factoryCardRef = useRef<HTMLDivElement>(null);
-  const scrollTriggerRef = useRef<ScrollTrigger | null>(null);
-  const parallaxTimelineRef = useRef<gsap.core.Timeline | null>(null);
   const lenis = useLenis();
   const t = useTranslations("Introduction");
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
@@ -95,7 +93,6 @@ export const IntroductionSection = (): JSX.Element => {
     }
 
     if (window.innerWidth >= 1024) {
-      const parallaxTimeline = gsap.timeline();
       parallaxImagesRef.current.forEach((imageRef, index) => {
         if (imageRef && scrollElementRef.current) {
           const imageData = heroImages[index];
@@ -118,8 +115,9 @@ export const IntroductionSection = (): JSX.Element => {
         }
       });
 
-      const trigger = ScrollTrigger.create({
-        animation: parallaxTimeline,
+      let scene1 = gsap.timeline();
+      ScrollTrigger.create({
+        animation: scene1,
         trigger: scrollElementRef.current,
         start: "top top",
         end: "bottom top",
@@ -136,7 +134,7 @@ export const IntroductionSection = (): JSX.Element => {
           const moveDistance = -300 * speed; // Increased base distance for more dramatic effect
           const rotationAmount = imageData.rotation + (speed * 25); // Increased rotation multiplier
 
-          parallaxTimeline.to(imageRef, {
+          scene1.to(imageRef, {
             y: moveDistance,
             rotation: rotationAmount,
             ease: "none"
@@ -144,24 +142,18 @@ export const IntroductionSection = (): JSX.Element => {
         }
       });
 
-      scrollTriggerRef.current = trigger;
-      parallaxTimelineRef.current = parallaxTimeline;
+      return () => {
+        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      };
     }
 
     if (lenis) {
       lenis.on('scroll', ScrollTrigger.update);
-    }
-
-    return () => {
-      parallaxTimelineRef.current?.kill();
-      parallaxTimelineRef.current = null;
-      scrollTriggerRef.current?.kill();
-      scrollTriggerRef.current = null;
-
-      if (lenis) {
+      
+      return () => {
         lenis.off('scroll', ScrollTrigger.update);
-      }
-    };
+      };
+    }
   }, [lenis, heroImages]);
 
   // 3D Tilt effect on mouse move
@@ -206,18 +198,18 @@ export const IntroductionSection = (): JSX.Element => {
           ref={sectionRef}
           className="relative w-full overflow-hidden"
           style={{
-            height: 'calc(100vh + 70px)',
-            minHeight: 'calc(100vh + 70px)',
-            maxHeight: 'calc(100vh + 70px)'
+            height: '100vh',
+            minHeight: '100vh',
+            maxHeight: '100vh'
           }}
         >
           {/* Background gradient layer (z-0) */}
           <div className="absolute inset-0 z-0" style={{
-            background: 'linear-gradient(180deg, rgba(229, 163, 15, 0.16) 0%, rgba(255, 255, 255, 0.16) 65%, rgba(255, 255, 255, 1) 100%)'
+            background: 'linear-gradient(180deg, rgba(229, 163, 15, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%)'
           }}></div>
 
           {/* Parallax images (above hero content, below header) */}
-          <div className="hidden lg:block absolute inset-0 pointer-events-none z-[25]">
+          <div className="hidden lg:block absolute inset-0 z-10 pointer-events-none">
             {heroImages.map((image, index) => (
               <div
                 key={index}
@@ -293,7 +285,7 @@ export const IntroductionSection = (): JSX.Element => {
           </div>
 
           {/* Content Layer (z-20) */}
-          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pb-8" style={{ paddingTop: '80px', minHeight: 'calc(100vh + 70px)' }}>
+          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pb-8" style={{ paddingTop: '80px', minHeight: '100vh' }}>
             <div ref={logoRef} className="flex justify-center items-center mb-4 md:mb-8 w-full px-4 mt-4 md:mt-8">
               <div className="w-full max-w-[800px] md:max-w-[900px] lg:max-w-[1000px] xl:max-w-[1077px]" style={{ aspectRatio: '1077/222' }}>
                 <Image
@@ -312,11 +304,11 @@ export const IntroductionSection = (): JSX.Element => {
               <span className="text-[#2b2b2b]">{t("headline.main")}</span>
             </h1>
 
-            <p className="text-[17px] md:text-xl lg:text-2xl font-bold text-[#222]/85 text-center max-w-5xl px-4 mb-2 md:mb-4" style={{ fontFamily: 'Manrope, sans-serif' }}>
+            <p className="text-md md:text-xl lg:text-2xl font-bold text-[#222] text-center max-w-5xl px-4 mb-2 md:mb-4" style={{ fontFamily: 'Manrope, sans-serif' }}>
               Çiftçilerin emeğinin gerçek değerini bulmasını sağlayarak onları güçlendiriyor, adil, şeffaf ve bolluk dolu bir piyasa yaratıyoruz. Üreticileri doğrudan pazarlarla buluşturup herkesin kazandığı sürdürülebilir bir ticaret modeli kuruyoruz.
             </p>
 
-                         <div className="hidden lg:block w-full h-[200px] md:h-[250px] lg:h-[380px] xl:h-[330px]"></div>
+                         <div className="hidden lg:block w-full h-[200px] md:h-[250px] lg:h-[330px] xl:h-[250px]"></div>
           </div>
         </section>
       </div>

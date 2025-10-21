@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   keywords: 'endüstriyel, kayış, kaplin, rulman, yedek parça, millersan',
   authors: [{name: 'MillerSan'}],
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico'
+    icon: [{url: '/images/favicon.ico', type: 'image/x-icon'}],
+    shortcut: [{url: '/images/favicon.ico', type: 'image/x-icon'}],
+    apple: [{url: '/images/favicon.ico', type: 'image/x-icon'}]
   },
   openGraph: {
     title: 'MillerSan - Endüstriyel Gücün Yeni Adı',

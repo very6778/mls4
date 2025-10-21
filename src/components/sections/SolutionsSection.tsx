@@ -24,10 +24,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] flex items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative ">
                 <Image
-                  src="/images/ref-images/AS-TON-Logo-kopya.jpg"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/bakeground-logo.png"
+                  alt="Bakeground logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -37,10 +37,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] flex items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative ">
                 <Image
-                  src="/images/ref-images/6-2f22325-ac24a76.png"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/bastak-logo.jpg"
+                  alt="Bastak logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -50,10 +50,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] flex items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative">
                 <Image
-                  src="/images/ref-images/logo-2.png"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/blue-logo.png"
+                  alt="Blue logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -63,10 +63,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="hidden md:flex w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative">
                 <Image
-                  src="/images/ref-images/cey.png"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/drm-logo.png"
+                  alt="DRM logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -76,10 +76,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="hidden md:flex w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative">
                 <Image
-                  src="/images/ref-images/logo-aag.svg"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/ferzaym-logo.svg"
+                  alt="Ferzaym logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -89,10 +89,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="hidden md:flex w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative">
                 <Image
-                  src="/images/ref-images/besler-agro.svg"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/karmill-logo.png"
+                  alt="Karmill logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -102,10 +102,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="hidden md:flex w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative">
                 <Image
-                  src="/images/ref-images/milano_logo.svg"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/milano-logo.png"
+                  alt="Milano logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -115,10 +115,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="hidden md:flex w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative ">
                 <Image
-                  src="/images/ref-images/logo.png"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/saar-logo.png"
+                  alt="Saar logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -128,10 +128,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="hidden md:flex w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative ">
                 <Image
-                  src="/images/ref-images/Yamansel-Lojistik-1-e1736765232155.png"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/scf-logo.svg"
+                  alt="SCF logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -141,10 +141,10 @@ export const SolutionsSection = (): JSX.Element => {
             <div className="hidden md:flex w-20 h-20 bg-white rounded-[6.67px] shadow-[0_2.22px_9.1px_rgba(0,0,0,0.09)] items-center justify-center flex-shrink-0">
               <div className="w-[73.33px] h-[84.68px] relative ">
                 <Image
-                  src="/images/ref-images/Dm-restore-e1729496116343.png"
-                  alt="Partner Logo"
-                  width={73}
-                  height={85}
+                  src="/images/logos/yamansel-logo.png"
+                  alt="Yamansel logosu"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>

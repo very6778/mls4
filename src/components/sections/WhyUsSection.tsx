@@ -49,7 +49,6 @@ export const WhyUsSection = (): JSX.Element => {
   ];
 
   useEffect(() => {
-    let titleHidden = false;
     if (typeof window === "undefined") return;
     
     const ctx = gsap.context(() => {
@@ -99,9 +98,7 @@ export const WhyUsSection = (): JSX.Element => {
               anticipatePin: 1,
               fastScrollEnd: false,
               onUpdate: (self) => {
-                // Hide title only after the exit animation is completely finished
-                if (self.progress > 0.65 && !titleHidden) {
-                  titleHidden = true;
+                if (self.progress > 0.65 && !isTitleHidden) {
                   setIsTitleHidden(true);
                 }
               }
@@ -170,7 +167,7 @@ export const WhyUsSection = (): JSX.Element => {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [isTitleHidden]);
 
   return (
     <section ref={sectionRef} className="w-full min-h-screen relative overflow-hidden">
