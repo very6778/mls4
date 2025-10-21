@@ -198,14 +198,14 @@ export const IntroductionSection = (): JSX.Element => {
           ref={sectionRef}
           className="relative w-full overflow-hidden"
           style={{
-            height: '100vh',
-            minHeight: '100vh',
-            maxHeight: '100vh'
+            height: 'calc(100vh + 70px)',
+            minHeight: 'calc(100vh + 70px)',
+            maxHeight: 'calc(100vh + 70px)'
           }}
         >
           {/* Background gradient layer (z-0) */}
           <div className="absolute inset-0 z-0" style={{
-            background: 'linear-gradient(180deg, rgba(229, 163, 15, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%)'
+            background: 'linear-gradient(180deg, rgba(229, 163, 15, 0.16) 0%, rgba(255, 255, 255, 0.16) 65%, rgba(255, 255, 255, 1) 100%)'
           }}></div>
 
           {/* Parallax images (above hero content, below header) */}
@@ -285,7 +285,7 @@ export const IntroductionSection = (): JSX.Element => {
           </div>
 
           {/* Content Layer (z-20) */}
-          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pb-8" style={{ paddingTop: '80px', minHeight: '100vh' }}>
+          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pb-8" style={{ paddingTop: '80px', minHeight: 'calc(100vh + 70px)' }}>
             <div ref={logoRef} className="flex justify-center items-center mb-4 md:mb-8 w-full px-4 mt-4 md:mt-8">
               <div className="w-full max-w-[800px] md:max-w-[900px] lg:max-w-[1000px] xl:max-w-[1077px]" style={{ aspectRatio: '1077/222' }}>
                 <Image
@@ -308,7 +308,7 @@ export const IntroductionSection = (): JSX.Element => {
               Çiftçilerin emeğinin gerçek değerini bulmasını sağlayarak onları güçlendiriyor, adil, şeffaf ve bolluk dolu bir piyasa yaratıyoruz. Üreticileri doğrudan pazarlarla buluşturup herkesin kazandığı sürdürülebilir bir ticaret modeli kuruyoruz.
             </p>
 
-                         <div className="hidden lg:block w-full h-[200px] md:h-[250px] lg:h-[330px] xl:h-[250px]"></div>
+                         <div className="hidden lg:block w-full h-[200px] md:h-[250px] lg:h-[380px] xl:h-[330px]"></div>
           </div>
         </section>
       </div>

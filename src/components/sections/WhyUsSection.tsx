@@ -16,6 +16,7 @@ export const WhyUsSection = (): JSX.Element => {
   const whyUsSecondRowRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isTitleHidden, setIsTitleHidden] = useState(false);
+  const titleHiddenRef = useRef(false);
 
   const whyUsCards = [
     {
@@ -98,7 +99,8 @@ export const WhyUsSection = (): JSX.Element => {
               anticipatePin: 1,
               fastScrollEnd: false,
               onUpdate: (self) => {
-                if (self.progress > 0.65 && !isTitleHidden) {
+                if (self.progress > 0.65 && !titleHiddenRef.current) {
+                  titleHiddenRef.current = true;
                   setIsTitleHidden(true);
                 }
               }
@@ -161,13 +163,16 @@ export const WhyUsSection = (): JSX.Element => {
         
         // Hide title after a short delay on mobile (slowed further)
         setTimeout(() => {
-          setIsTitleHidden(true);
+          if (!titleHiddenRef.current) {
+            titleHiddenRef.current = true;
+            setIsTitleHidden(true);
+          }
         }, 30000);
       });
     }, sectionRef);
 
     return () => ctx.revert();
-  }, [isTitleHidden]);
+  }, []);
 
   return (
     <section ref={sectionRef} className="w-full min-h-screen relative overflow-hidden">
